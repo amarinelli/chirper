@@ -1,0 +1,22 @@
+<!-- app/application/template.hbs -->
+
+<header>
+  <div class="page-container">
+
+    <div class="logo"></div>
+
+    <nav>
+      {{#link-to "home"}}Home{{/link-to}}
+
+      {{#link-to "user"}}
+        <img class="avatar" src="/images/avatar.jpg" />
+        amarinelli
+      {{/link-to}}
+
+      <button class="chirp">Chirp</button>
+    </nav>
+
+  </div>
+</header>
+
+{{outlet}}
