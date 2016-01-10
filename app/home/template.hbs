@@ -2,12 +2,15 @@
 
 <div class="page-container home-page">
   <aside class="left">
-    {{profile-glance}}
+    <!-- Here we add an attribute called "user" to our
+    "profile-glance"-component and set its value to the
+    data loaded from the route -->
+    {{profile-glance user=model.user}}
   </aside>
 
   <main>
     {{status-update}}
-    {{chirps-list}}
+    {{chirps-list chirps=model.chirps}}
   </main>
 </div>
 

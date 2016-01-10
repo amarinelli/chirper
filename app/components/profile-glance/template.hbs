@@ -3,20 +3,20 @@
 <div class="cover-photo"></div>
 <img class="avatar" src="/images/avatar.jpg" />
 {{#link-to "user"}}
-  amarinelli
+  {{user.username}}
 {{/link-to}}
 <ul class="profile-stats">
   <li>
     <h4>Chirps</h4>
-    <p>10</p>
+    <p>{{user.numberOfChirps}}</p>
   </li>
   <li>
     <h4>Following</h4>
-    <p>10</p>
+    <p>{{user.numberOfFollowing}}</p>
   </li>
   <li>
     <h4>Followers</h4>
-    <p>10</p>
+    <p>{{user.numberOfFollowers}}</p>
   </li>
 </ul>
 
