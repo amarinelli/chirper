@@ -1,5 +1,7 @@
 <!-- app/user/followers/template.hbs -->
 
-<h2>Followers</h2>
+{{#each model.users as |user|}}
+  {{profile-glance user=user}}
+{{/each}}
 
 {{outlet}}
