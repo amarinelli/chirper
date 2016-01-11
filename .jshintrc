@@ -3,7 +3,9 @@
     "server",
     "document",
     "window",
-    "-Promise"
+    "-Promise",
+    "sweetAlert",
+    "swal"
   ],
   "browser": true,
   "boss": true,

@@ -3,7 +3,7 @@
 <div class="cover-photo"></div>
 <img class="avatar" src="/images/avatar.jpg" />
 {{#link-to "user"}}
-  {{user.username}}
+  {{user.username}} <time>Joined: {{moment-from-now user.joinedAt}}</time>
 {{/link-to}}
 <ul class="profile-stats">
   <li>

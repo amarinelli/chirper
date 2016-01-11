@@ -5,7 +5,7 @@
   {{#link-to 'user'}}
     {{chirp.user.username}}
   {{/link-to}}
-  <time>{{chirp.createdAt}}</time>
+  <time>{{moment-from-now chirp.createdAt}}</time>
   <p>{{chirp.text}}</p>
 </div>
 
