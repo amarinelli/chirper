@@ -41,6 +41,7 @@
     "ember-data": "1.13.15",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
-    "ember-moment": "5.0.2"
+    "ember-moment": "5.0.2",
+    "liquid-fire": "0.22.1"
   }
 }

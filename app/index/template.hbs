@@ -8,11 +8,11 @@
   </div>
 
   <div class="login-box">
-    {{#if errorMessage}}
+    {{#liquid-if errorMessage}}
     	<p class="error">{{errorMessage}}</p>
-    {{else}}
-      <p class="general">Please Register or Sign In</p>
-    {{/if}}
+    <!-- {{else}}
+      <p class="general">Please Register or Sign In</p> -->
+    {{/liquid-if}}
 
     {{input placeholder="Username" value=username }}
     {{input type="password" escape-press='alertUser' placeholder="Password" value=password }}

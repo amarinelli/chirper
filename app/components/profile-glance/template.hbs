@@ -1,7 +1,7 @@
 <!-- app/components/profile-glance/template.hbs -->
 
 <div class="cover-photo"></div>
-<img class="avatar" src="/images/avatar.jpg" />
+<img class="avatar" src="/images/avatar.jpg" data-profile-image="me"/>
 {{#link-to "user"}}
   {{user.username}} <time>Joined: {{moment-from-now user.joinedAt}}</time>
 {{/link-to}}
