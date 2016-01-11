@@ -8,11 +8,17 @@
   </div>
 
   <div class="login-box">
+    {{#if errorMessage}}
+    	<p class="error">{{errorMessage}}</p>
+    {{else}}
+      <p class="general">Please Register or Sign In</p>
+    {{/if}}
+
     {{input placeholder="Username" value=username }}
-    {{input type="password" placeholder="Password" value=password }}
+    {{input type="password" escape-press='alertUser' placeholder="Password" value=password }}
 
     <button class="signup">Sign up</button>
-    <button class="login">Log in</button>
+    <button class="login" {{action 'login'}}>Log in</button>
   </div>
 
 </div>
